@@ -1,0 +1,70 @@
+<!Doctype html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Temperature Weather Visualization</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Home</a>
+
+       <!-- Toggler/collapsibe Button -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button> 
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+            <div class="dropdown-menu">
+                    <a class="dropdown-item" href="vpg_Temperature.html">Temperature v Latitude</a>
+                    <a class="dropdown-item" href="vpg_Humidity.html">Humidity v Latitude</a>
+                    <a class="dropdown-item" href="Vpage_Cloudiness.html">Cloudiness v Latitude</a>
+                    <a class="dropdown-item" href="vpg_WindSpeed.html">Wind Speed v Latitude</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison_page.html">Comparison</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="Data.html"> Data</a>
+            
+          </li>
+        </ul>
+    </div>
+      </nav>
+      <br>
+      <br>
+
+      <div class="container float-center">       
+            <h1>Flat World Problems:</h1>
+            <h4 class="text-muted">Temperature (F) vs Latitude</h4>
+            <hr>
+            <br>
+
+            <div class="img-fluid col-sl float-left">
+                    <img src="https://github.com/mustafasaadi89/API_WeatherMap/blob/master/Temperature%20(F)%20vs.%20Latitude.png?raw=true"
+                     class="float-left" alt="Temperature (F) vs Latitude" class="rounded">
+                </div>
+            
+            <div class="col-sm-4 float-left"
+               <p class="float-none font-weight-light col-sm-4">
+                    Comparing Temperature  versus latitude shows cities closer to the equator
+                    are hotter.  
+                </p>
+        </div>
+        
+
+
+
+</body>
+
+</html>

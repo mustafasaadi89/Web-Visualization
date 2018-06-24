@@ -1,0 +1,93 @@
+<!Doctype html>
+<html lang= "en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Homework Illustration Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Home</a>
+
+       <!-- Toggler/collapsibe Button -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button> 
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="vpg_Temperature.html">Temperature v Latitude</a>
+                <a class="dropdown-item" href="vpg_Humidity.html">Humidity v Latitude</a>
+                <a class="dropdown-item" href="Vpage_Cloudiness.html">Cloudiness v Latitude</a>
+                <a class="dropdown-item" href="vpg_WindSpeed.html">Wind Speed v Latitude</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison_page.html">Comparison</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="Data.html"> Data</a>
+            
+          </li>
+        </ul>
+    </div>
+      </nav>
+      <br>
+      <br>
+      <!--Page Header -->
+      <div class="jumbotron jumbotron-fluid bg-success text-white">
+            <div class="container">
+                <h1> Flat World Problems: </h1>
+                <h4> Weather Temperature Really Is Impacted by Latitude and Longitude</h4>
+            </div> 
+      </div>
+      <hr>
+      <br>
+      <br>
+       <!--Visualization and Summary -->
+    <div class="container float-center">
+
+
+       <div class="col-sl-">
+       <img src="https://github.com/mustafasaadi89/API_WeatherMap/blob/master/Temperature%20(F)%20vs.%20Latitude.png?raw=true" class="float-left" 
+       alt = "Temperature (F) vs. Latitude" class="rounded">
+      </div>
+      <div class="col-sl-">
+        <p class="float-none font-weight-light">
+            The purpose of this project was to analyze how
+            weather changes as you get closer to the equator. To accomplish this analysis, we first pulled
+            data from the OpebWeatherMap API to assemble a dataset on over 500 cities.
+        </p>
+        <br>
+        <p class="float-none font-weight-light">
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+          Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
+          This site provides source data and visualizations created as part of the analysis, as well as explanations
+          and descriptions of any trends and correlations witnessed.
+        </p>
+      </div>
+    </div>      
+    
+
+
+</body>
+</html>
